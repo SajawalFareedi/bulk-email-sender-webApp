@@ -1,0 +1,36 @@
+{
+  "name": "stripe-payments",
+  "version": "1.5.2",
+  "description": "Creating a Bulk Mailing React app with Stripe for Payments and Google Oauth for Authentication.",
+  "main": "index.mjs",
+  "engines": {
+    "node": "14.17.0",
+    "npm": "7.16.0"
+  },
+  "scripts": {
+    "start": "node index.mjs",
+    "server": "nodemon index.mjs",
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [
+    "Stripe",
+    "Payments",
+    "Google Oauth",
+    "Redux",
+    "Authentication"
+  ],
+  "author": {
+    "name": "Sajawal Fareedi",
+    "email": "sajawalfareedi448@gmail.com"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^6.2.0",
+    "cookie-session": "^1.4.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.13",
+    "passport": "^0.4.1",
+    "passport-google-oauth20": "^2.0.0"
+  }
+}
